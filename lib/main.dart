@@ -8,20 +8,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Container(
-        margin: EdgeInsets.only(top: 30),
-        color: Colors.white,
-        child: Column(
-          children: <Widget>[
-            AppBar(title: Text('Contoh Cupertino')),
-            CupertinoButton(
-              child: Text("Contoh button"),
-              onPressed: () {},
-            ),
-            CupertinoActivityIndicator(),
-          ],
-        ),
-      ),
+      home: Scaffold(
+          appBar: AppBar(title: Text("Contoh Cupertino")),
+          body: Container(
+              alignment: Alignment.bottomCenter,
+              child: Text('Semangat Belajar',
+                  style: TextStyle(
+                    fontSize: 20,
+                  )))),
     );
   }
 }
